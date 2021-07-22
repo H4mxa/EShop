@@ -11,6 +11,28 @@
   right: 40px;
   z-index: 5;
 
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+    position: relative;
+    animation-name: message;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes message {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 2px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
   .cart-items {
     height: 240px;
     display: flex;
